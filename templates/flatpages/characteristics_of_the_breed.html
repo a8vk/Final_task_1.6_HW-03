@@ -1,0 +1,27 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+{% load static %}
+<img src="{% static 'images/foto3.jpg' %}"  width="400">
+{{ flatpage.content }}
+<p><strong>Агрессивность</strong> Не агрессивная (Рейтинг 1/5)</p>
+<p><strong>Активность</strong> Средняя (Рейтинг 3/5)</p>
+<p><strong>Дрессировка</strong> Средне (Рейтинг 3/5)</p>
+<p><strong>Линька</strong> Минимальная (Рейтинг 1/5)</p>
+<p><strong>Потребность в уходе</strong> Высокая (Рейтинг 4/5)</p>
+<p><strong>Дружелюбность</strong> Дружелюбная (Рейтинг 4/5)</p>
+<p><strong>Здоровье</strong> Хорошее (Рейтинг 4/5)</p>
+<p><strong>Стоимость содержания</strong> Низкое (Рейтинг 2/5)</p>
+<p><strong>Отношение к одиночеству</strong> Не переносит (Рейтинг 1/5)</p>
+<p><strong>Интеллект</strong> Умная (Рейтинг 4/5)</p>
+<p><strong>Шум</strong> Низкий (Рейтинг 2/5)</p><p>
+<p><strong>Охранные качества</strong> Хорошие (Рейтинг 4/5)</p>
+
+{% endblock content %}

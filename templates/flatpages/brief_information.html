@@ -5,17 +5,17 @@
 {% endblock title %}
 
 {% block content %}
-    <h2>{{ flatpage.title }}</h2>
-    <hr>
-{{ flatpage.content }}
-<p>
-<strong>Название породы:</strong> Йоркширский терьер</br>
-<strong>Страна происхождения:</strong> Англия</br>
-<strong>Время зарождения породы:</strong> конец XIX века</br>
-<strong>Вес:</strong> 2-3,2 кг</br>
-<strong>Рост (высота в холке):</strong> 15-17 см</br>
-<strong>Продолжительность жизни:</strong> 12-15 лет</br>
-</p>
 
+<h2>{{ flatpage.title }}</h2>
+<hr>
+{% load static %}
+<img src="{% static 'images/foto1.jpg' %}"  width="400">
+{{ flatpage.content }}
+<p><strong>Название породы:</strong> Йоркширский терьер</p>
+<p><strong>Страна происхождения:</strong> Англия</p>
+<p><strong>Время зарождения породы:</strong> конец XIX века</p>
+<p><strong>Вес:</strong> 2-3,2 кг</p>
+<p><strong>Рост (высота в холке):</strong> 15-17 см</p>
+<p><strong>Продолжительность жизни:</strong> 12-15 лет</p>
 
 {% endblock content %}
